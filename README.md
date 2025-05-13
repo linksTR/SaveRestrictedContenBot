@@ -101,10 +101,11 @@ Tutorial for okteto - [click here](https://telegra.ph/Okteto-Deploy-04-01)
 
 # Release User Manual
 
+### first time
 - step 1 download and decompression：
 
 ```
-wget $(curl -s https://api.github.com/repos/LiangJiQi/SaveRestrictedContentBot/releases/latest | grep "browser_download_url" | cut -d '"' -f 4)
+wget -O "forward_bot.tar.gz" $(curl -s https://api.github.com/repos/LiangJiQi/SaveRestrictedContentBot/releases/latest | grep "browser_download_url" | cut -d '"' -f 4)
 tar -xf forward_bot.tar.gz
 ```
 
@@ -114,5 +115,18 @@ tar -xf forward_bot.tar.gz
 
 - step 3 run the bot:
 ```
-nohup ./forward_bot > bot.log 2>&1 &
+./manage_forward_bot.sh start
+```
+
+### other time
+
+- update and run :
+```
+./manage_forward_bot.sh update
+./manage_forward_bot.sh start
+```
+
+##### supported parameter commands
+```
+./manage_forward_bot.sh start|stop|status|log|update
 ```
