@@ -99,34 +99,4 @@ Tutorial for okteto - [click here](https://telegra.ph/Okteto-Deploy-04-01)
 [![Develop on Okteto](https://okteto.com/develop-okteto.svg)](https://cloud.okteto.com)
 
 
-# Release User Manual
-
-### first time
-- step 1 download and decompression：
-
-```
-wget -O "forward_bot.tar.gz" $(curl -s https://api.github.com/repos/LiangJiQi/SaveRestrictedContentBot/releases/latest | grep "browser_download_url" | cut -d '"' -f 4)
-tar -xf forward_bot.tar.gz
-```
-
-- step 2 Set environment variables：
-  `copy the keys of Variables into .env file`
-  
-
-- step 3 run the bot:
-```
-./manage_forward_bot.sh start
-```
-
-### other time
-
-- update and run :
-```
-./manage_forward_bot.sh update
-./manage_forward_bot.sh start
-```
-
-##### supported parameter commands
-```
-./manage_forward_bot.sh start|stop|status|log|update
-```
+[wiki](https://github.com/jadrian77/SaveRestrictedContentBot/wiki)
