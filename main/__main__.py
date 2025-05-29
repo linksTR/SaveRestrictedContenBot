@@ -7,7 +7,7 @@ from main import bot
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
 
-from main.plugins import batch, frontend, helpers, progress, pyroplug, start
+from main.plugins import batch, frontend, helpers, progress, pyroplug, start, get_videos
 
 #Don't be a thief 
 print("Successfully deployed!")
